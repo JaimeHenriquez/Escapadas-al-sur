@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tour Valdivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Agrega esta línea -->
+    <link rel="icon" type="image/png" href="imagenes/escc.png">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="tour-detail-container">
+        <div class="gallery-carousel">
+            <div class="gallery-track">
+                <!-- Galería de 6 imágenes -->
+                <div class="gallery-item">
+                    <img src="imagenes/Jardin-Botanico-de-la-Universidad-Austral-de-Chile-en-Valdivia.webp" alt="Muelle Schuster">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/fuerte de niebla.jpg" alt="Jardín Botánico">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/puente pedro de valdivia.jpg" alt="Castillo de Niebla">
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-content">
+            <h1>City Tour Valdivia Histórico</h1>
+            
+            <!-- Horarios -->
+            <div class="schedule-section highlight">
+                <h2>Horarios del Tour</h2>
+                <div class="schedule-grid">
+                    <div class="time-item">
+                        <span class="time-label">Turno Mañana:</span>
+                        <span class="time-value">09:00 - 11:30 h</span>
+                    </div>
+                    <div class="time-item">
+                        <span class="time-label">Turno Tarde:</span>
+                        <span class="time-value">15:00 - 17:30 h</span>
+                    </div>
+                </div>
+                <p class="note" style="margin-top:1rem;color:#ff6b6b;">¡Cupos Limitados!</p>
+            </div>
+
+            <!-- Precios -->
+            <div class="price-highlight">
+                <div class="price-card-main">
+                    <h3>Precio por Persona</h3>
+                    <div class="price-item">
+                        <span class="price">$20.000 CLP</span>
+                        <span class="price-label">Adultos</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price">$15.000 CLP</span>
+                        <span class="price-label">Niños (3-10 años)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre el Destino -->
+            <section class="info-section">
+                <h2>Sobre el Tour</h2>
+                <p class="highlight">Recorrido de 2.5 horas por el patrimonio histórico de Valdivia. Comenzamos en el centro histórico, exploramos la Isla Teja con su Jardín Botánico de la UACh, y finalizamos en Niebla con el imponente Castillo de la Concepción. Una experiencia que combina historia, arquitectura y naturaleza.</p>
+            </section>
+
+            <!-- Lugares a visitar -->
+            <section class="locations-section">
+                <h2>Lugares destacados</h2>
+                <div class="location-grid">
+                    <span>Muelle Schuster</span>
+                    <span>Feria Fluvial</span>
+                    <span>Mercado Municipal</span>
+                    <span>Costanera Valdivia</span>
+                    <span>Puente Calle Calle</span>
+                    <span>Torreón del Barro</span>
+                    <span>Plaza de la República</span>
+                    <span>Puente Pedro de Valdivia</span>
+                    <span>Isla Teja</span>
+                    <span>Jardín Botánico UACh</span>
+                    <span>Castillo de Niebla</span>
+                </div>
+            </section>
+
+            <!-- Recomendaciones -->
+            <section class="recommendations-section">
+                <h2>Recomendaciones</h2>
+                <div class="recommendation-columns">
+                    <div>
+                        <h3>Equipo Necesario</h3>
+                        <ul>
+                            <li>Zapatos cómodos</li>
+                            <li>Protección solar</li>
+                            <li>Mochila pequeña</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Preparación</h3>
+                        <ul>
+                            <li>Llegar 15 min antes</li>
+                            <li>Efectivo para compras</li>
+                            <li>Cámara fotográfica</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Políticas -->
+            <section class="policy-section">
+                <h2>Política de Cancelación</h2>
+                <ul class="policy-list">
+                    <li>100% devolución con 3 días de anticipación</li>
+                    <li>90% devolución con 2 días de anticipación</li>
+                    <li>60% devolución con 1 día de anticipación</li>
+                    <li>No hay devoluciones con menos de 24 horas</li>
+                </ul>
+                <p class="note">* Válido con certificado médico o fuerza mayor documentada</p>
+            </section>
+
+            <a href="https://wa.me/56997812852?text=Hola%20Escapadas%20del%20Sur,%20quiero%20reservar%20el%20City%20Tour%20Valdivia" 
+               class="cta-button" 
+               target="_blank">
+                ¡Reserva tu Cupo Ahora!
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <script>
+        // Cargar Navbar
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar navbar:', error));
+
+        // Cargar Footer
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar footer:', error));
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        lightbox.addEventListener('click', (e) => {
+            if(e.target === lightbox) closeLightbox();
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

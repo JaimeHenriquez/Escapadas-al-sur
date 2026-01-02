@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Nuestros Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Agrega esta línea -->
+    <link rel="icon" type="image/png" href="imagenes/escc.png">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1>Nuestras Experiencias</h1>
+            
+            <div class="all-tours-container">
+                <!-- Tours destacados del index -->
+                <div class="tour-card">
+                    <img src="imagenes/MarquesDeMancera-1-07001d80.png" alt="Tour Corral-Mancera">
+                    <div class="tour-info">
+                        <h3>Tour Corral-Mancera</h3>
+                        <p>Conoce fortificaciones militares del siglo XVII y disfruta de una travesía histórica por Valdivia.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="corralmancera.html" class="info-button">Más información</a>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="imagenes/Salto la leona, Reserva Biológica Huilo Huilo, Panguipulli, Chile_.jpg" alt="Tour Huilo Huilo">
+                    <div class="tour-info">
+                        <h3>Tour Reserva Huilo Huilo</h3>
+                        <p>Sumérgete en la magia del bosque valdiviano y descubre cascadas espectaculares.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="reservahuilo.html" class="info-button">Más información</a>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="imagenes/termas huilo huilo2.jpg" alt="Tour Termas">
+                    <div class="tour-info">
+                        <h3>Tour Termas Huilo Huilo</h3>
+                        <p>Relájate en aguas termales naturales en medio del bosque nativo.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="termashuilo.html" class="info-button">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Nuevos tours -->
+                <div class="tour-card">
+                    <img src="imagenes/iglesia punucapa.JPG" alt="Navegación Punucapa">
+                    <div class="tour-info">
+                        <h3>Navegación Punucapa</h3>
+                        <p>Visita Punucapa, localidad rural a las faldas de la cordillera del Mahuidanche.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="punucapa.html" class="info-button">Más información</a>
+                    </div>
+                </div>
+
+                <!--<div class="tour-card">
+                    <img src="imagenes/futangue.jpg" alt="Tour Parque Futangue">
+                    <div class="tour-info">
+                        <h3>Tour Parque Futangue</h3>
+                        <p>Naturaleza cordillerana y aguas cristalinas del Lago Ranco.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="futangue.html" class="info-button">Más información</a>
+                    </div>
+                </div> -->
+
+                <div class="tour-card">
+                    <img src="imagenes/Torreon picarte.jpg" alt="City Tour">
+                    <div class="tour-info">
+                        <h3>City Tour Valdivia-Niebla</h3>
+                        <p>Recorrido histórico por el casco antiguo de Valdivia y fuertes costeros.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="citytour.html" class="info-button">Más información</a>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="imagenes/oncol4.jpeg" alt="Tour Parque Oncol">
+                    <div class="tour-info">
+                        <h3>Tour Parque Oncol</h3>
+                        <p>Refugio de biodiversidad en las alturas de la cordillera de la Costa.</p>
+                        <div class="departure-info">Saliendo desde Valdivia</div>
+                        <a href="oncol.html" class="info-button">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar el navbar:', error));
+    </script>
+
+<script>
+    // Cargar footer
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.log('Error al cargar el footer:', error));
+</script>
+         <!-- Botón de WhatsApp -->
+<a href="https://wa.me/56997812852?text=Hola%20Escapadas%20del%20Sur,%20quiero%20hacer%20una%20reserva" 
+class="whatsapp-float" 
+target="_blank" 
+rel="noopener noreferrer">
+ <img src="imagenes/logo whatsapp.png" alt="WhatsApp">
+</a>
+</body>
+</html>

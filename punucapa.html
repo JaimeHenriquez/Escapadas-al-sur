@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Punucapa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Agrega esta línea -->
+    <link rel="icon" type="image/png" href="imagenes/escc.png">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="tour-detail-container">
+        <div class="gallery-carousel">
+            <div class="gallery-track">
+                <div class="gallery-item">
+                    <img src="imagenes/iglesia punucapa.JPG" alt="Vista de Punucapa">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/punucapa cartel.jpg" alt="Iglesia de la Virgen de la Candelaria">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/muelle punucapa.jpg" alt="Feria Gastronómica">
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-content">
+            <h1>Tour Punucapa</h1>
+            
+            <div class="schedule-section highlight">
+                <h2>Horarios del Tour</h2>
+                <div class="schedule-grid">
+                    <div class="time-item">
+                        <span class="time-label">Salidas:</span>
+                        <span class="time-value">12:30 h <br> 14:00 h <br> 16:00 h</span>
+                    </div>
+                    <div class="time-item">
+                        <span class="time-label">Regreso:</span>
+                        <span class="time-value">16:30 h <br> 18:00 h <br> 20:00 h</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-highlight">
+                <div class="price-card-main">
+                    <h3>Precio por Persona</h3>
+                    <div class="price-item">
+                        <span class="price">$15.000 CLP</span>
+                        <span class="price-label">Adultos</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price">$10.000 CLP</span>
+                        <span class="price-label">Niños (3-10 años)</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="info-section">
+                <h2>Sobre el Destino</h2>
+                <p class="highlight">Descubre el encanto de Punucapa, joya rural junto al Santuario de la Naturaleza Carlos Anwandter. Conoce su iglesia centenaria, el majestuoso Ciprés de Monterrey y disfruta de la producción local de sidra y cerveza artesanal. En temporada estival, vive la vibrante feria gastronómica con sabores tradicionales.</p>
+            </section>
+
+            <section class="included-section">
+                <div class="included-content">
+                    <div class="includes-column">
+                        <h2>El Precio incluye</h2>
+                        <ul class="included-list">
+                            <li>Traslado a Punucapa</li>
+                            <li>Visita guiada a la iglesia</li>
+                            <li>Degustación de sidra y cerveza</li>
+                            <li>Guía turístico especializado</li>
+                        </ul>
+                    </div>
+                    <div class="not-included-column">
+                        <h2>El Valor NO incluye</h2>
+                        <ul class="excluded-list">
+                            <li>Propinas (tips)</li>
+                            <li>Comidas en feria gastronómica</li>
+                            <li>Recuerdos o compras adicionales</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="locations-section">
+                <h2>Lugares a visitar</h2>
+                <div class="location-grid">
+                    <span>Punucapa</span>
+                    <span>Iglesia Virgen de la Candelaria</span>
+                    <span>Feria Gastronómica</span>
+                    <span>Santuario Carlos Anwandter</span>
+                    <span>Río Valdivia</span>
+                    <span>Río Cau Cau</span>
+                    <span>Río Cruces</span>
+                </div>
+            </section>
+
+            <section class="recommendations-section">
+                <h2>Recomendaciones</h2>
+                <div class="recommendation-columns">
+                    <div>
+                        <h3>Equipo Esencial</h3>
+                        <ul>
+                            <li>Ropa cómoda y capas</li>
+                            <li>Calzado para caminata</li>
+                            <li>Protector solar y repelente</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Preparación</h3>
+                        <ul>
+                            <li>Botella de agua recargable</li>
+                            <li>Efectivo para compras locales</li>
+                            <li>Cámara fotográfica</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="policy-section">
+                <h2>Política de Cancelación</h2>
+                <ul class="policy-list">
+                    <li>100% devolución con 3 días de anticipación</li>
+                    <li>90% devolución con 2 días de anticipación</li>
+                    <li>60% devolución con 1 día de anticipación</li>
+                    <li>No hay devoluciones con menos de 24 horas</li>
+                </ul>
+                <p class="note">* Válido con certificado médico o fuerza mayor documentada</p>
+            </section>
+
+            <a href="https://wa.me/56997812852?text=Hola%20Escapadas%20del%20Sur,%20quiero%20reservar%20el%20tour%20Punucapa" 
+               class="cta-button" 
+               target="_blank">
+                ¡Reserva tu Aventura Cultural!
+            </a>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar el navbar:', error));
+
+        // Lightbox Script
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        lightbox.addEventListener('click', (e) => {
+            if(e.target === lightbox) closeLightbox();
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+<script>
+    // Cargar footer
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.log('Error al cargar el footer:', error));
+</script>
+
+             <!-- Botón de WhatsApp -->
+<a href="https://wa.me/56997812852?text=Hola%20Escapadas%20del%20Sur,%20quiero%20hacer%20una%20reserva" 
+class="whatsapp-float" 
+target="_blank" 
+rel="noopener noreferrer">
+ <img src="imagenes/logo whatsapp.png" alt="WhatsApp">
+</a>
+</body>
+</html>

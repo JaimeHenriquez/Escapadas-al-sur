@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Propósito - Escapadas al Sur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="imagenes/escc.png">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <!-- Contenido Principal -->
+    <div class="welcome-section" style="margin: 100px auto 2rem; max-width: 1200px;">
+        <div class="welcome-content">
+            <h1>Nuestro Proposito</h1>
+            
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p class="highlight">
+                        En Escapadas del Sur nacemos con un propósito claro: crear experiencias turísticas excepcionales 
+                        que superen todas las expectativas. Somos más que una empresa de turismo, somos creadores de 
+                        momentos inolvidables en la majestuosa Región de Los Ríos.
+                    </p>
+                    
+                    <p>
+                        Seleccionamos cuidadosamente cada servicio para garantizar los más altos estándares de calidad. 
+                        Desde alojamientos auténticos hasta tours únicos, cada experiencia está diseñada para que 
+                        nuestros clientes vivan la auténtica esencia del sur de Chile con comodidad y seguridad.
+                    </p>
+                </div>
+                
+                <div class="logo-content">
+                    <img src="imagenes/escc.png" alt="Logo" class="main-logo">
+                </div>
+            </div>
+
+            <!-- Sección Colaboradores -->
+            <div class="collaborators-section">
+                <h3>Nuestros principales colaboradores</h3>
+                <div class="collaborators-grid">
+                    <div class="collaborator-card">
+                        <img src="imagenes/Guiadelosrios.jpeg" alt="Guia de los rios">
+                    </div>
+                    <div class="collaborator-card">
+                        <img src="" alt="Patagonia">
+                    </div>
+                    <div class="collaborator-card">
+                        <img src="imagenes/aliados/turismo-chile.png" alt="Turismo Chile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <style>
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin: 2rem 0;
+        }
+
+        .text-content {
+            flex: 2;
+        }
+
+        .logo-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .main-logo {
+            max-width: 300px;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        .collaborators-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #e0ebe0;
+        }
+
+        .collaborators-section h3 {
+            text-align: center;
+            color: #2c5f2d;
+            margin-bottom: 2rem;
+        }
+
+        .collaborators-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .collaborator-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .collaborator-card img {
+            max-width: 200px;
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .main-logo {
+                max-width: 200px;
+                margin: 0 auto;
+            }
+            
+            .collaborators-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        // Cargar navbar
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar el navbar:', error));
+
+        // Cargar footer
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar el footer:', error));
+    </script>
+</body>
+</html>

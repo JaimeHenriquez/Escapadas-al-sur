@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedajes en Valdivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Agrega esta línea -->
+    <link rel="icon" type="image/png" href="imagenes/escc.png">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1>Hospedajes en Valdivia</h1>
+            
+            <div class="all-tours-container">
+                <!-- Cabaña 1 -->
+                <div class="tour-card">
+                    <img src="imagenes/hospedajes/cabana1.jpg" alt="Cabañas del Río">
+                    <div class="tour-info">
+                        <h3>Cabañas del Río</h3>
+                        <p>Ubicación: Costanera Valdivia<br>
+                        Capacidad: 4 personas<br>
+                        Precio desde: $80.000 por noche</p>
+                        <div class="departure-info">⭐ 4.8 (256 reviews)</div>
+                        <a href="https://wa.me/56997812852?text=Hola%20quiero%20reservar%20Cabañas%20del%20Río" 
+                           class="info-button" 
+                           target="_blank">
+                            Reservar Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cabaña 2 -->
+                <div class="tour-card">
+                    <img src="imagenes/hospedajes/cabana2.jpg" alt="Bosque Nativo Lodge">
+                    <div class="tour-info">
+                        <h3>Bosque Nativo Lodge</h3>
+                        <p>Ubicación: Camino a Niebla<br>
+                        Capacidad: 6 personas<br>
+                        Precio desde: $120.000 por noche</p>
+                        <div class="departure-info">⭐ 4.9 (178 reviews)</div>
+                        <a href="https://wa.me/56997812852?text=Hola%20quiero%20reservar%20Bosque%20Nativo%20Lodge" 
+                           class="info-button" 
+                           target="_blank">
+                            Reservar Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cabaña 3 -->
+                <div class="tour-card">
+                    <img src="imagenes/hospedajes/cabana3.jpg" alt="Cabañas Isla Teja">
+                    <div class="tour-info">
+                        <h3>Cabañas CarLuis</h3>
+                        <p>Ubicación: Doctor Labbe #43<br>
+                        Capacidad: 2-5 personas<br>
+                        Precio desde: $70.000 por noche</p>
+                        <div class="departure-info">⭐ 4.8 (98 Opiniones)</div>
+                        <a href="carluis.html" 
+                           class="info-button" 
+                           target="_blank">
+                            Mas Informacion
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cabaña 4 -->
+                <div class="tour-card">
+                    <img src="imagenes/hospedajes/cabana4.jpg" alt="Refugio Costero">
+                    <div class="tour-info">
+                        <h3>Refugio Costero</h3>
+                        <p>Ubicación: Playa Niebla<br>
+                        Capacidad: 4 personas<br>
+                        Precio desde: $95.000 por noche</p>
+                        <div class="departure-info">⭐ 4.8 (215 reviews)</div>
+                        <a href="https://wa.me/56997812852?text=Hola%20quiero%20reservar%20Refugio%20Costero" 
+                           class="info-button" 
+                           target="_blank">
+                            Reservar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        })
+        .catch(error => console.log('Error al cargar el navbar:', error));
+    </script>
+
+<script>
+    // Cargar footer
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.log('Error al cargar el footer:', error));
+</script>
+
+         <!-- Botón de WhatsApp -->
+<a href="https://wa.me/56997812852?text=Hola%20Escapadas%20del%20Sur,%20quiero%20hacer%20una%20reserva" 
+class="whatsapp-float" 
+target="_blank" 
+rel="noopener noreferrer">
+ <img src="imagenes/logo whatsapp.png" alt="WhatsApp">
+</a>
+</body>
+</html>

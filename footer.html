@@ -1,0 +1,150 @@
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Escapadas al Sur</h4>
+            <p>Descubre la magia de la Región de Los Ríos</p>
+            <div class="footer-contact">
+                <p>📞 +56 9 9781 2852</p>
+                <p>✉️ contacto@escapadasdelsur.cl</p>
+                <p>📍 Valdivia, Chile</p>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul class="footer-links">
+                <li><a href="tours.html">Nuestros Tours</a></li>
+                <li><a href="hospedaje.html">Hospedajes</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61572936213234" target="_blank" class="social-icon">
+                    <img src="imagenes/logo facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/escapadasalsur.cl?fbclid=IwY2xjawIVHoJleHRuA2FlbQIxMAABHdaWfsRpqGXhC1mQUKhG7bKCnDeOeW0R5Ehe9TJ3SuzJYOuszErVCC12EA_aem_c3YFX5M7Y33cDuwAE6mtDQ" target="_blank" class="social-icon">
+                    <img src="imagenes/logo instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/56997812852" target="_blank" class="social-icon">
+                    <img src="imagenes/logo whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 Escapadas al Sur - Turismo sustentable en Los Ríos</p>
+        <p><a href="politica-privacidad.html">Política de Privacidad</a></p>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        background: #1e3a1f;
+        color: white;
+        padding: 2rem 1rem;
+        margin-top: 4rem;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .footer-section h4 {
+        color: #4CAF50;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-contact p {
+        margin: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin: 0.5rem 0;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #4CAF50;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        background: #2c5f2d;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s;
+    }
+
+    .social-icon:hover {
+        transform: translateY(-3px);
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-bottom {
+        max-width: 1200px;
+        margin: 2rem auto 0;
+        text-align: center;
+        padding-top: 1rem;
+        border-top: 1px solid #2c5f2d;
+    }
+
+    .footer-bottom p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        
+        .footer-contact p {
+            justify-content: center;
+        }
+        
+        .social-icons {
+            justify-content: center;
+        }
+    }
+</style>
